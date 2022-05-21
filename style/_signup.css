@@ -4,11 +4,6 @@
    box-sizing: border-box;
 }
 
-a {
-   text-decoration: none;
-   color: inherit;
-}
-
 body {
    display: flex;
    align-content: center;
@@ -18,16 +13,16 @@ body {
    font-family: sans-serif;
 }
 
-.logo {
-   margin: 5px 0;
-}
-
 .container {
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
    align-items: center;
    width: 100%;
+}
+
+.logo {
+   margin: 5px 0;
 }
 
 .form-group {
@@ -47,14 +42,23 @@ body {
    margin: 10px 0;
 }
 
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   color: #af6968;
+}
+
 input, button {
-   padding: 15px 20px;
+   padding: 10px 20px;
    margin: 5px 0;
    width: 100%;
    background-color: #ececec;
    border: none;
    border-radius: 20px;
-   font-size: 14px; 
+   font-size: 13px; 
 }
 
 button {
@@ -68,5 +72,11 @@ button:hover {
    /* border: 2px solid #45629f; */
    cursor: pointer;
    background: linear-gradient(to right, #3a4969 0%, #af6968 100%);
+}
+
+form p {
+   text-align: center;
+   font-size: 11px;
+   padding: 20px 15px 0;
 }
 
